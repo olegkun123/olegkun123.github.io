@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    background-color: rgb(1, 4, 49);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.title {
+    text-shadow: 4px 4px 5px #41aacacc;
+}
+
+#clock {
+    font-size: 40px;
+}
+
+#btn {
+    width: 170px;
+    height: 40px;
+    top: 150px;
+    left: 400px;
+    background-color: rgba(22, 78, 151, 0.63);
+    box-shadow: 2px 2px 0px 0px rgb(22, 71, 143);
+    cursor: pointer;
+    color: white;
+    /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; */
+    border-width: 1px;
+    border: 0;
+    /* border-style: solid; */
+    /* border-color: rgb(28, 21, 153); */
+    border-radius: 10px;
+    outline: none;
+    transition: 0.25s;
+}
+
+#btn:hover {
+    box-shadow: 3px 3px 1px 1px rgb(22, 71, 143);
+}
+
+h1 {
+    font-size: 70px;
+}
