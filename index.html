@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Олег Куницын - начинающий фронтенд-разработчик</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link type="image/ico" rel="icon" href="images/favicon.ico">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/normalize.css'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand text-center" href="#top">
+                    <img src="images/adwords.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Обо мне</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Умения и знания</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Портфолио проектов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Связаться со мной</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="intro" id="top">
+            <div class="container-fluid">
+                <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2" class="active"></button>
+                        <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item prog-dev">
+                            <img src="images/slide-1.png" class="d-block w-100" alt="slide-1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Навыки программирования</h2>
+                                <p>Сделаю любой сайт интерактивным и интересным, но есть к чему стремиться.</p>
+                                <p>Могу отличиться неплохими знаниями чистого <span>JavaScript</span> и библиотеки <span>jQuery</span>. Сейчас нахожусь на стадии активного изучения фреймворка <span>Vue.js</span> и планирую еще улучшить свои навыки в сфере программирования.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="images/slide-2.png" class="d-block w-100" alt="slide-2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Привет, Мир!</h1>
+                                <p>Меня зовут Куницын Олег, и я начинающий фронтенд-разработчик.<br>
+                                Добро пожаловать на мой сайт-портфолио!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item web-dev">
+                            <img src="images/slide-3.png" class="d-block w-100" alt="slide-3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2>Навыки верстки</h2>
+                                <p>Могу гордиться своими крепкими знаниями верстки сайтов.</p>
+                                <p>Знаю <span class="web">html5</span> и <span class="web">css3</span> на высоком уровне. Из дополнительного - CSS-препроцессоры <span class="web">SCSS</span> и <span class="web">SASS</span>, могу работать с <span class="web">Bootstrap v5.0</span>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="about">
+        <section class="about">
+            <div class="container">
+                <h2>Коротко обо мне</h2>
+                <h3>Немного статистической информации:</h3>
+                <ul>
+                    <li>Место базации - Москва, ЮВАО.</li>
+                    <li>Возраст - 19 лет.</li>
+                </ul>
+                <br>
+                <h3>Из персональных качеств могу выделить:</h3>
+                <ul>
+                    <li>Креативность</li>
+                    <li>Предприимчивость</li>
+                    <li>Амбициозность</li>
+                </ul>
+                <p>Я начал изучать верстку веб-сайтов еще в 15 лет по обычным интернет-курсам. Тогда мне очень понравилась эта сфера и с точки зрения перспективности, и с точки зрения низкого порога входа, ведь в то время я воспринимал любую IT профессию как программирование, с которым у меня тогда было довольно туго. Поэтому когда я узнал, что я смогу создавать сайты без программирования (естественно, на начале курсов до него мы еще не дошли), я был очень удивлен и даже рад.</p>
+                <br>
+                <p>С тех пор прошло много времени и я улучшил свои навыки сфере веб-разработки очень основательно: изучил бибилиотеку jQuery, освоил html5 и css3, препроцессоры ccs. Сейчас у меня даже есть что предоставить в качестве портфолио большим IT компаниям и я по-настоящему горжусь этим.</p>
+                <div class="facts" id="skills">
+                    <button class="standart-btn" type="button" data-bs-toggle="collapse" data-bs-target="#facts-collapse" aria-expanded="false" aria-controls="collapseExample">Интересные факты обо мне</button>
+                    <div class="collapse" id="facts-collapse">
+                        <div class="card card-body">
+                            <ul>
+                                <li>Я безумно люблю итальянскую кухню</li>
+                                <li>Мое тотемное животное - куница. Естественно, по фамилии видно :)</li>
+                                <li>Я пью очень много кофе (но спать тоже люблю)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="container">
+                <h2>Мои знания и умения</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="description">
+                            <p>Адаптивная кроссбраузерная верстка</p>
+                            <p>Препроцессоры</p>
+                            <p>Bootstrap v5.0</p>
+                            <p>JS, jQuery</p>
+                            <p>Vue.js</p>
+                            <p>Поедание пиццы</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="table">
+                            <div class="value skill-1">
+                                <p>90%</p>
+                            </div>
+                            <div class="value skill-2">
+                                <p>95%</p>
+                            </div>
+                            <div class="value skill-3">
+                                <p>85%</p>
+                            </div>
+                            <div class="value skill-4">
+                                <p>80%</p>
+                            </div>
+                            <div class="value skill-5">
+                                <p>70%</p>
+                            </div>
+                            <div class="value skill-6">
+                                <p id="portfolio">95%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="container">
+                <h2>Мое портфолио</h2>
+                <h3>Верстка</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://picsum.photos/1920/1080" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Название карточки</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="standart-btn">Просмотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://picsum.photos/1920/1080" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Название карточки</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="standart-btn">Просмотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://picsum.photos/1920/1080" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Название карточки</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="standart-btn">Просмотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>JavaScript & jQuery</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/portfolio/Снимок экрана (358).png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">WATCH</h4>
+                                <p class="card-text">Небольшой JS-проект с часами и интерактивным задним фоном.</p>
+                                <a href="portfolio/WATCH/index.html" class="standart-btn">Просмотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://picsum.photos/1920/1080" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Название карточки</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="standart-btn">Просмотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <h3>Vue.js</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="images/portfolio/Снимок экрана (358).png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">WATCH</h4>
+                                <p class="card-text">Небольшой JS-проект с часами и интерактивным задним фоном.</p>
+                                <a href="portfolio/WATCH/index.html" class="standart-btn">Просмотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://picsum.photos/1920/1080" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Название карточки</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="standart-btn">Просмотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contacts">
+                        <div>
+                            <p class="desc">Телефон</p>
+                            <p>+79151046727</p>
+                        </div>
+                        <div>
+                            <p class="desc">Email</p>
+                            <p>ol.kunitsin@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3 social-media d-flex">
+                    <!-- <div class="social-media d-flex"> -->
+                    <a href="">
+                        <img src="images/instagram.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/vk.png" alt="">
+                    </a>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src='js/jQuery.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src='js/main.js'></script>
+</body>
+</html>
